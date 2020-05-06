@@ -27,16 +27,15 @@ gulp.task('htmlbeautify', function() {
             'acronym', 'address', 'big', 'dt', 'ins', 'strike', 'tt'
         ]
     };
-gulp.src('src/pug/*.html')
+return gulp.src('src/pug/index.html')
     .pipe(htmlbeautify(options))
-    .pipe(gulp.dest('src/'))
+    .pipe(gulp.dest('src'))   
 });
 
 gulp.task('pug', function() {
   return gulp.src("src/pug/pages/*.pug")
       .pipe(pug())
       .pipe(gulp.dest("src/pug/"))
-      .pipe(htmlbeautify())
       .pipe(browserSync.stream());
 });
 
@@ -92,6 +91,8 @@ gulp.task('watch', function() {
     gulp.watch("src/*.html", gulp.parallel('html'));
     gulp.watch("src/js/*.js", gulp.parallel('scripts'));
     gulp.watch("src/images/*.+(jpg|jpeg|png|gif|svg)", gulp.parallel('imgs'));
+    gulp.watch("src/pug/pages/*.pug", gulp.parallel('pug'));
+    gulp.watch("src/pug/*.html", gulp.parallel('htmlbeautify'));
 });
 
 gulp.task("default", gulp.parallel("pug", "htmlbeautify", "html", "sass", "scripts", "imgs","browserSync", "watch"));
