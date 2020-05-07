@@ -63,3 +63,16 @@
 	justify-content: space-between;
 	margin:10px 0 0 0;
 }
+@media (min-width:630px) {
+	.owl-theme .owl-dots .owl-dot{
+		display:flex;
+		flex-grow:0;
+		zoom:1;
+		width:60px;
+	}
+	.owl-theme .owl-dots {
+		display: flex;
+		justify-content: center;
+		margin:10px 0 0 0;
+	}	
+}
