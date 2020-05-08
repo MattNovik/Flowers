@@ -25,7 +25,7 @@
         </div>
         <div class="wrapperMenu"><input id="menuToggle" type="checkbox">
             <label class="menuBtn" for="menuToggle"><span></span></label>
-            <span class="menuDesc">MENU</span>
+            <span class="menuDesc" id="menuDesc">МЕНЮ</span>
             <div class="menuBox">
                 <div class="wrapperLogo">
                     <div class="wrapperTopLogo">
@@ -205,47 +205,55 @@
                         </svg>
                     </div>
                 </div>
-                <div class="wrapperHelpNavDesc"><a class="toPortfolio">смотреть работы</a><img class="mouse"></div>
-                <div class="wrapperArrowMob"><img src="images/downArrow.svg"></div>
+                <div class="wrapperHelpNavDesc"><img class="mouse" src="images/mouse.png"></div>
+                <div class="wrapperArrowMob"><span>смотреть каталог</span><img src="images/downArrow.svg"></div>
             </div>
         </div>
         <div class="catalog">
             <h2 class="underBlockDesc">КАТАЛОГ УСЛУГ</h2>
-            <h3>КАТАЛОГ УСЛУГ</h3>
+            <h3 class="catalogProp">КАТАЛОГ УСЛУГ<span></span></h3>
             <div class="wrapperWorks owl-carousel owl-theme">
                 <div class="wrapperWorkFirst item">
                     <div class="wrapperWorkSecond first">
                         <div class="wrapperLineNumber"><span class="line"></span><span class="number">01</span></div>
-                        <div class="textName">букет невесты и свадебное оформление</div>
-                        <a class="toWorkDesc"></a>
+                        <div class="wrapperTextToWork">
+                            <div class="textName">букет невесты и свадебное оформление</div>
+                            <a class="toWorkDesc">Смотреть работы</a>
+                        </div>
                     </div>
                 </div>
                 <div class="wrapperWorkFirst item">
                     <div class="wrapperWorkSecond second">
                         <div class="wrapperLineNumber"><span class="line"></span><span class="number">02</span></div>
-                        <div class="textName">букеты на торжества</div>
-                        <a class="toWorkDesc"></a>
+                        <div class="wrapperTextToWork">
+                            <div class="textName">букеты на торжества</div>
+                            <a class="toWorkDesc">Смотреть работы</a>
+                        </div>
                     </div>
                 </div>
                 <div class="wrapperWorkFirst item">
                     <div class="wrapperWorkSecond third">
                         <div class="wrapperLineNumber"><span class="line"></span><span class="number">03</span></div>
-                        <div class="textName">композиции</div>
-                        <a class="toWorkDesc"></a>
+                        <div class="wrapperTextToWork">
+                            <div class="textName">композиции</div>
+                            <a class="toWorkDesc">Смотреть работы</a>
+                        </div>
                     </div>
                 </div>
                 <div class="wrapperWorkFirst item">
                     <div class="wrapperWorkSecond fourth">
                         <div class="wrapperLineNumber"><span class="line"></span><span class="number">04</span></div>
-                        <div class="textName">оформление мероприятий</div>
-                        <a class="toWorkDesc"></a>
+                        <div class="wrapperTextToWork">
+                            <div class="textName">оформление мероприятий</div>
+                            <a class="toWorkDesc">Смотреть работы</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="wrapperSaleAndOrder">
                 <div class="wrapperSaleAndOrderBlock">
                     <div class="wrapperInside">
-                        <h3>АКЦИОННЫЕ</br> ПРЕДЛОЖЕНИЯ</h3><span class="lineBottom"></span>
+                        <h3 class="saleProp">АКЦИОННЫЕ</br> ПРЕДЛОЖЕНИЯ</h3><span class="lineBottom"></span>
                         <p class="sale">При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p><button class="makeOrder" id="makeOrder">заказать оформление</button>
                     </div>
                 </div>

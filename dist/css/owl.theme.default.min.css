@@ -76,3 +76,31 @@
 		margin:10px 0 0 0;
 	}	
 }
+@media (min-width:710px) {
+	.owl-theme .owl-dots .owl-dot{
+		width:80px;
+		margin:0 20px;		
+	}
+}
+@media (min-width:810px) {
+	.owl-theme .owl-dots .owl-dot{
+		width:120px;
+
+	}
+}
+@media (min-width:910px) {
+	.owl-theme .owl-dots .owl-dot{
+		width:140px;
+	}
+	.owl-theme .owl-dots {
+		margin:20px 0 0 0;
+	}
+	.owl-theme .owl-nav.disabled+.owl-dots {
+		margin:20px 0 0 0;
+	}	
+}
+@media (min-width:1025px) {
+	.owl-theme .owl-dots {
+		display: none;
+	}
+}
