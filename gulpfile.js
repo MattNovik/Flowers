@@ -256,7 +256,7 @@ gulp.task("scripts-secondPage", function() {
         .pipe(concat('scripts.js')) // объеденим все js-файлы в один 
         .pipe(uglify()) // вызов плагина uglify - сжатие кода
         .pipe(rename({ suffix: '.min' })) // вызов плагина rename - переименование файла с приставкой .min
-        .pipe(gulp.dest("dist/insidePages/firstPage/js")); // директория продакшена, т.е. куда сложить готовый файл
+        .pipe(gulp.dest("dist/insidePages/secondPage/js")); // директория продакшена, т.е. куда сложить готовый файл
 });
 
 gulp.task("scripts-thirdPage", function() {
